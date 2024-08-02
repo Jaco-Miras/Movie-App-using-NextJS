@@ -2,6 +2,7 @@ import Link from "next/link";
 import MenuItem from "./MenuItem";
 import { AiFillHome } from "react-icons/ai";
 import { IoInformationCircleSharp } from "react-icons/io5";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 export default function Header() {
   return (
@@ -15,11 +16,14 @@ export default function Header() {
         />
       </div>
 
-      <Link href={"/"} className="flex items-center">
-        <span className="text-2xl text-white font-bold bg-blue-500 py-1 px-2 rounded-lg">
-          Movie App
-        </span>
-      </Link>
+      <div className="flex items-center gap-4">
+        <DarkModeSwitch />
+        <Link href={"/"} className="flex items-center">
+          <span className="text-2xl text-white font-bold bg-blue-500 py-1 px-2 rounded-lg">
+            Movie App
+          </span>
+        </Link>
+      </div>
     </div>
   );
 }
