@@ -8,9 +8,10 @@ const nextConfig = {
         pathname: "**",
       },
     ],
-    experimental: {
-      missingSuspenseWithCSRBailout: false,
-    },
+  },
+
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
   },
 };
 
